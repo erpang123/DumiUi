@@ -1,0 +1,26 @@
+.upload-lists{
+  padding: 0;
+}
+.upload-file-lists{
+  padding: 4px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  .f-file-name{
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 4px;
+  }
+  .anticon-delete{
+    cursor: pointer;
+    visibility: hidden;
+  }
+  &:hover{
+    background: #f2f4f5;
+    .anticon-delete{
+      visibility: visible;
+    }
+  }
+}
