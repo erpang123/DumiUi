@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react';
 
-export const useInterval = (callback: any, delay: any) => {
+const useInterval = (callback: any, delay: any) => {
   const savedCallback: any = useRef();
 
   // Remember the latest function.
@@ -18,15 +18,17 @@ export const useInterval = (callback: any, delay: any) => {
       return () => clearInterval(id);
     }
   }, [delay]);
-}
+};
 
-export const usePrevious = (value: any) => {
+const usePrevious = (value: any) => {
   const ref = useRef();
 
   useEffect(() => {
     ref.current = value;
-    console.log(222)
+    console.log(222);
   }, [value]);
-  console.log(value)
+  console.log(value);
   return ref.current;
-}
+};
+
+export { useInterval, usePrevious };

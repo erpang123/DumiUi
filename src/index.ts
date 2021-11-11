@@ -1,10 +1,10 @@
-export { default as Button} from './Button';
-export { default as Form } from './Form';
-export { default as Upload } from './Upload'
-export { default as CountDown } from './CountDown'
-export { default as CityCasc } from './CityCasc'
-export { default as SelectTable } from './SelectTable'
-export { setObjToStr, formatTime, deepCopy } from './method'
-export { Axios } from './request'
-// 自定义hooks
-export { useInterval, usePrevious } from './Hooks'
+import 'antd/dist/antd.css';
+export { default as Button } from './packages/Button';
+export { default as CountDown } from './packages/CountDown';
+export { default as Form } from './packages/Form';
+export { default as FormTable } from './packages/FormTable';
+export { default as SelectTable } from './packages/SelectTable';
+export { default as Upload } from './packages/Upload';
+export { useInterval, usePrevious } from './Hooks';
+export { setObjToStr, formatTime, deepCopy } from './method';
+export { Axios } from './request';
