@@ -4,37 +4,6 @@
 import React from 'react';
 import { Upload } from 'fudata-ui';
 
-// const OSS = (window as any).OSS
-// let client = new OSS({
-//   //阿里云账号AccessKey拥有所有API的访问权限，建议遵循阿里云安全最佳实践，创建并使用STS方式访问API。
-//   accessKeyId: 'LTAI5tSp5sN8ekufP7uaYasf',
-//   accessKeySecret: 'dZ8WC5bVq9uaMu3FIlGMCptREdpr4B',
-//   bucket: 'filebuck'
-// });
-
-// 默认的oss上传地址
-// const customRequest = ({file, onSuccess}: any) => {
-//   const fileName = file.name || '默认名称'
-//   console.log(fileName)
-//   onSuccess('')
-//   // oss的文件目录
-//   // const uploadName = `fsUpload/${fileName}`
-//   // client.put(uploadName, file).then(function (r1: any) {
-//   //   console.log('put success: %j', r1);
-//   //   message.success('上传成功')
-//   //   onChange(r1)
-//   //   return client.get(uploadName);
-//   // }).then(function (r2: any) {
-//   //   console.log('get success: %j', r2);
-//   //   const requestUrls = r2.res.requestUrls
-//   //   const requestUrl = Array.isArray(requestUrls) ? requestUrls[0] : requestUrls
-//   //   setImageUrl(requestUrl)
-//   // }).catch(function (err: any) {
-//   //   console.error('error: %j', err);
-//   //   message.error('上传失败')
-//   // });
-// }
-
 export default () => {
   const uploadProps = {
     value:
